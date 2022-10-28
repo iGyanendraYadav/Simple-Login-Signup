@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body class="bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500">
+        <div class="MainBox flex flex-col md:flex-row justify-center items-center md:justify-evenly ">
+           <div class="left text-white">
+                <form class="md:w-72 w-72 rounded-lg md:mt-28 mt-10 space-y-3 flex flex-col " action="#" method="post">
+                    <h1 class="login text-xl font-bold text-center">LOGIN HERE</h1>
+                    
+                    <input class="rounded-lg  focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" required type="text" name="username" id="username" placeholder="Username" />
+                    
+                    <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" type="password" required name="password" id="password" placeholder="Password" />
+                    <div class="checkbox flex justify-evenly text-sm">
+                        <div>
+                            <input type="checkbox" name="rememberme" id="rememberme">Remember Me</input>
+                        </div>
+                        
+                        <a class="cursor-pointer hover:underline" href="/" target="_blank" rel="noopener noreferrer">Forgot Password</a>
+                    </div>
+
+                    <button class="w-full rounded-lg p-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 font-bold"  type="submit">LOGIN</button>
+                    <div class="checkbox flex justify-evenly text-sm">
+                        <div>
+                            <span>New User ?</span>
+                            <a class="cursor-pointer hover:underline" href="/" target="_blank" rel="noopener noreferrer">Create Account</a>
+                
+                        </div>
+                    </div>
+                </form>
+           </div>
+           <div class="right text-white ">
+            <form class="md:w-72 w-72 rounded-lg md:mt-20 mt-10 space-y-3 flex flex-col " action="#" method="post">
+                <h1 class="login text-xl font-bold text-center">OR SIGNUP HERE</h1>
+                    
+                <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" required type="text" name="email" id="email" placeholder="Email Address" />
+
+                <div class="flex justify-evenly space-x-5">
+                    <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center w-32 text-gray-400" required type="text" name="fname" id="fname" placeholder="First Name" />
+                    <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center w-32 text-gray-400" required type="text" name="lname" id="lname" placeholder="Last Name" />
+            
+                </div>
+                <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" type="phone" name="phone" id="phone" required placeholder="Phone Number">
+                <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" type="password" required name="password1" id="password1" placeholder=" Create Password" />
+                <input class="rounded-lg focus:outline outline-2 outline-cyan-200 h-7 indent-3 items-center text-gray-400" type="password" required name="password2" id="password2" placeholder="Confirm Password" />
+                <div class="checkbox flex justify-evenly text-sm">
+                    <div>
+                        <span>Already Have An Account ?</span>
+                        <a class="cursor-pointer hover:underline" href="/" target="_blank" rel="noopener noreferrer">Login Here</a>
+            
+                    </div>
+                </div>
+
+                <button class="w-full rounded-lg p-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 font-bold"  type="submit">SIGNUP</button>
+            </form>
+           </div>
+        </div>
+        <div class="footer bg-transparent flex flex-col md:flex-row justify-center mt-10 md:mt-60 space-x-0 md:space-x-5 text-center md:text-justify ">
+            <span class="text-sm text-white hover:underline "><a href="/">Privacy</a></span>
+            <span class="text-sm text-white hover:underline "><a href="/">Terms & Conditions</a></span>
+            <span class="text-sm text-white hover:underline "><a href="/">Disclaimers</a></span>
+            <span class="text-sm text-white  ">&copy;All Rights Reserved.</span>
+        </div>
+    </body>
+</html>
